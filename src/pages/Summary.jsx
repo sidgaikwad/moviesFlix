@@ -38,7 +38,7 @@ const Summary = () => {
         />
       )}
 
-      <div className="flex h-auto w-full overflow-hidden items-center justify-center bg-[#252831] ">
+      <div className="flex h-auto w-full overflow-hidden items-center justify-center bg-purple-600 ">
         {data ? (
           <div className="lg:flex sm:block ">
             <img
@@ -47,9 +47,9 @@ const Summary = () => {
               className="lg:h-[100vh] lg:w-[40vw]  p-5 rounded-lg"
             />
             <div className="p-5 ">
-              <div className="border-2 w-full h-full text-white p-3 flex flex-col items-center gap-y-14 rounded-lg">
+              <div className="border-2 w-full h-full text-white p-3 flex flex-col items-center gap-y-14 rounded-lg shadow-md shadow-zinc-950  ">
                 <p className="text-5xl font-semibold ">{data?.name}</p>
-                <div dangerouslySetInnerHTML={{ __html: data?.summary }} />
+                <div className="font-bold font-serif " dangerouslySetInnerHTML={{ __html: data?.summary }} />
                 <div className="flex gap-x-10">
                   <p
                     className="bg-black bg-opacity-30 py-1.5 px-4  rounded-lg"

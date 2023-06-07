@@ -23,7 +23,7 @@ const [loading, setLoading] =useState(false)
     <>
     {
 
-loading ? (  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-5  text-white bg-[#252831] bg-opacity-60 ">
+loading ? (  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-5  text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-opacity-60 ">
 
 
 
@@ -34,7 +34,7 @@ loading ? (  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 g
       key={index}
       className="flex justify-center items-center flex-col"
     >
-      <div className="p-3 ">
+      <div className="p-3 bg-purple-600 shadow-md shadow-zinc-950 hover:bg-indigo-600 rounded-md">
         <img
           src={value?.show.image.medium}
           className=" rounded-lg"
@@ -45,10 +45,10 @@ loading ? (  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 g
         <hr className="border-1 border-white" />
         <p>{value?.show.genres.join(", ")} </p>
       </div>
-      <div>
+      <div className="my-4">
         <Link
           to={`/summary/${value?.show.id}`}
-          className=" font-semibold text-lg duration-100 border hover:bg-blue-600 px-3 py-1.5 rounded-lg"
+          className=" font-semibold text-lg duration-100 border shadow-md shadow-black hover:bg-indigo-600 px-3 py-1.5 rounded-lg"
         >
           View Summary
         </Link>
