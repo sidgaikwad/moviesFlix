@@ -37,13 +37,13 @@ loading ? (  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 g
       <div className="p-3 bg-purple-600 shadow-md shadow-zinc-950 hover:bg-indigo-600 rounded-md">
         <img
           src={value?.show.image.medium}
-          className=" rounded-lg"
+          className=" rounded-lg "
           alt=""
         />
-        <p className="font-semibold">{value?.show.name}</p>
-        <p>{value?.show.language}</p>
+        <p className="font-bold">Name: {value?.show.name}</p>
+        <p className="font-bold">Language: {value?.show.language}</p>
         <hr className="border-1 border-white" />
-        <p>{value?.show.genres.join(", ")} </p>
+        <p className="font-bold">{value?.show.genres.join(",")} </p>
       </div>
       <div className="my-4">
         <Link
